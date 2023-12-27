@@ -1,4 +1,4 @@
-const Contact = require("../model/Schema")
+const Contact = require("../models/Schema")
 
 const contactController = async (req, res) => {
   try {
