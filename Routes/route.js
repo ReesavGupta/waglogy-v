@@ -10,6 +10,8 @@ const loginController = require("../controllers/loginController")
 const registerController = require("../controllers/registerController")
 const auth = require("../middleware/auth")
 
+const projectController = require("../controllers/projectsController")
+
 // For Index (Home Page)
 
 route.get("/", IndexController)
@@ -67,6 +69,9 @@ route.post(
 // For Contact Page
 
 route.post("/contact", contactController)
+
+//For Projects page
+route.get("/projects", projectController)
 
 // For Partners Page
 
